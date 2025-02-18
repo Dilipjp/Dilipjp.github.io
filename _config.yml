@@ -1,40 +1,106 @@
-# _config.yml
-
-# Site Settings
+---
+layout: default
 title: "Dilip Kumara"
-description: "The personal portfolio of Dilip Kumara showcasing projects and skills."
-url: "https://dilipjp.github.io"   # Your live site URL
-baseurl: ""                        # Leave empty if deploying at the root
-author: "Dilip Kumara"
-timezone: "Asia/Colombo"           # Adjust to your local timezone
+---
 
-# Theme Configuration
-theme: jekyll-theme-minimal
-show_downloads: false              # Hides download links if not needed
+<style>
+  /* Reset and base styling */
+  body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  a {
+    text-decoration: none;
+  }
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #6b73ff, #000dff);
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+    margin: 0;
+  }
+  .hero p {
+    font-size: 1.25rem;
+    margin: 20px 0;
+  }
+  .hero a.btn {
+    display: inline-block;
+    background: #fff;
+    color: #000dff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  .hero a.btn:hover {
+    background: #ddd;
+  }
+  /* Portfolio Section */
+  .portfolio {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  .portfolio .card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+  }
+  .portfolio .card:hover {
+    transform: translateY(-5px);
+  }
+  .portfolio .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .portfolio .card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  .portfolio .card a {
+    color: #000dff;
+    font-weight: bold;
+  }
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+</style>
 
-# Build Settings
-markdown: kramdown               # Markdown processor
-highlighter: rouge               # Syntax highlighter for code blocks
+<div class="hero">
+  <h1>Dilip Kumara</h1>
+  <p>The personal portfolio of Dilip Kumara showcasing projects and skills.</p>
+  <a class="btn" href="https://github.com/dilipjp" target="_blank">View My GitHub Profile</a>
+</div>
 
-# Exclude from Processing (These files/folders won't be processed by Jekyll)
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
+<div class="portfolio">
+  <h2>Portfolio</h2>
+  <!-- Example Project Card -->
+  <div class="card">
+    <h3>Project Title</h3>
+    <p>A short description of your project goes here. Highlight the key features or technologies used.</p>
+    <a href="https://github.com/dilipjp/your-project" target="_blank">Learn More</a>
+  </div>
+  <!-- Duplicate and modify this block for additional projects -->
+</div>
 
-# Plugins (Optional Enhancements)
-plugins:
-  - jekyll-feed       # Generates an RSS feed for your posts
-  - jekyll-seo-tag    # Helps improve SEO with proper meta tags
-
-# Additional Customizations (Optional)
-# You can add more settings or custom variables below
-# For example, to define social links or custom footer text:
-social:
-  twitter: "https://twitter.com/yourhandle"
-  github: "https://github.com/dilipjp"
-  linkedin: "https://www.linkedin.com/in/yourprofile"
-
-footer:
-  text: "© 2025 Dilip Kumara. All rights reserved."
+<footer>
+  <p>&copy; 2025 Dilip Kumara. All rights reserved.</p>
+</footer>
