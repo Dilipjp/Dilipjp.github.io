@@ -5,100 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dilip Kumara | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <!-- Navigation Menu -->
-    <!-- Navigation Menu -->
-<nav>
-    <div class="logo">Dilip Kumara</div>
-    <ul class="nav-links">
-        <li><a href="#hero">Home123</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="menu-toggle" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-    </div>
-</nav>
-
-
-    <!-- Header Section -->
-    <header>
-        <h1>Dilip Kumara</h1>
-        <p>Senior Software Engineer | Mobile & Web Developer</p>
-    </header>
+    <!-- <nav>
+        <div class="container">
+            <div class="logo">Dilip Kumara</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav> -->
 
     <!-- Hero Section -->
-    <section id="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Innovative and results-driven software engineer with expertise in mobile and web technologies. Skilled in React Native, Angular, Ionic, PHP, and Laravel, with hands-on experience in Google Authentication and Firebase services for secure and scalable applications.
-        Well-versed in Play Store and App Store deployment, ensuring seamless app releases and updates. Dedicated to crafting high-performance, user-friendly applications that enhance user experiences across platforms.</p>
-        <a href="https://github.com/Dilipjp" class="btn">View My GitHub</a>
-    </section>
+    <header id="hero">
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <h1>Dilip Kumara</h1>
+                <p>Senior Software Engineer | Mobile & Web Developer</p>
+                <p class="hero-description">
+                    Innovative and results-driven software engineer with expertise in mobile and web technologies. Skilled in React Native, Angular, Ionic, PHP, and Laravel, with hands-on experience in Google Authentication and Firebase services for secure and scalable applications. Well-versed in Play Store and App Store deployment, ensuring seamless app releases and updates. Dedicated to crafting high-performance, user-friendly applications that enhance user experiences across platforms.
+                </p>
+                <a href="https://github.com/Dilipjp" class="btn btn-primary">View My GitHub</a>
+            </div>
+        </div>
+    </header>
+    
 
-    <!-- Projects Section -->
-    <section id="projects">
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
         <h2>Projects</h2>
         <div class="project-container">
             <div class="project-card">
-                <h3>NewsLine</h3>
-                <p>NewsLine is an Android application built with Java that allows users to stay updated with the latest news. Users can read articles, save their favorites, comment on news posts, and share them with others. The app integrates Firebase Authentication for secure login, Firebase Realtime Database for saving user data, News API for fetching real-time news, and Stripe API for handling payments.</p>
-                <a href="https://github.com/Dilipjp/NewsLine" target="_blank" class="btn">View on GitHub</a>
+                <div class="project-content">
+                    <h3>NewsLine</h3>
+                    <p>Android news app using Java, Firebase, News API, and Stripe.</p>
+                    <a href="https://github.com/Dilipjp/NewsLine" class="btn btn-secondary">View on GitHub</a>
+                </div>
             </div>
             <div class="project-card">
-                <h3>Connectify</h3>
-                <p>Connectify is an Android application built with Java that allows users to connect, share content, and interact with others in a social media platform similar to Instagram. Users can create profiles, post images, follow other users, like and comment on posts, and much more. The app integrates Firebase Authentication for secure login, Firebase Realtime Database for storing user data, and Firebase Storage for managing user images.</p>
-                <a href="https://github.com/Dilipjp/Connectify-android" target="_blank" class="btn">View on GitHub</a>
+                <div class="project-content">
+                    <h3>Connectify</h3>
+                    <p>Social media app like Instagram using Java and Firebase.</p>
+                    <a href="https://github.com/Dilipjp/Connectify-android" class="btn btn-secondary">View on GitHub</a>
+                </div>
             </div>
             <div class="project-card">
-                <h3>Social Media App</h3>
-                <p>A React Native-based app with user posts, likes, and comments.</p>
-                <a href="https://github.com/Dilipjp/social-media-app" target="_blank" class="btn">View on GitHub</a>
+                <div class="project-content">
+                    <h3>WebOtp</h3>
+                    <p>Auto-read OTP from SMS for quick and secure completion in web apps or PWAs.</p>
+                    <a href="https://github.com/Dilipjp/WebOtp" class="btn btn-secondary">View on GitHub</a>
+                </div>
             </div>
             <div class="project-card">
-                <h3>Kitchen Magic</h3>
-                <p>Kitchen-Magic is a recipe search Reactjs web application designed to help users find and explore recipes based on ingredients, keywords, or categories. With an intuitive interface, users can search for recipes, view detailed instructions, and save their favorite recipes for future reference.</p>
-                <a href="https://github.com/Dilipjp/recipe" target="_blank" class="btn">View on GitHub</a>
+                <div class="project-content">
+                    <h3>Kitchen Magic</h3>
+                    <p>ReactJS recipe search app for exploring new dishes.</p>
+                    <a href="https://github.com/Dilipjp/recipe" class="btn btn-secondary">View on GitHub</a>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Work Experience Section -->
-    <section id="experience">
+<section id="experience">
+    <div class="container">
         <h2>Work Experience</h2>
-        <div class="experience-card">
-            <h3>Senior Software Engineer</h3>
-            <p>Evoke International (2017 - 2023)</p>
+        <div class="experience-container">
+            <div class="experience-card">
+                <i class="fas fa-briefcase experience-icon"></i>
+                <h3>Senior Software Engineer</h3>
+                <p class="company">Evoke International</p>
+                <span class="duration">2017 - 2023</span>
+                <p>Developed mobile and web applications using React Native, Ionic, and Laravel. Led a team of developers to build scalable solutions.</p>
+            </div>
+            <div class="experience-card">
+                <i class="fas fa-code experience-icon"></i>
+                <h3>Software Engineer</h3>
+                <p class="company">Interflex</p>
+                <span class="duration">2015 - 2017</span>
+                <p>Worked on Android and hybrid mobile apps. Integrated APIs and optimized performance for high-traffic applications.</p>
+            </div>
+            <div class="experience-card">
+                <i class="fas fa-laptop experience-icon"></i>
+                <h3>Web Developer</h3>
+                <p class="company">Maadya Digital</p>
+                <span class="duration">2010 - 2015</span>
+                <p>Designed and developed responsive websites, handling both front-end and back-end development using PHP and JavaScript.</p>
+            </div>
         </div>
-        <div class="experience-card">
-            <h3>Software Engineer</h3>
-            <p>Interflex (2015 - 2017)</p>
-        </div>
-        <div class="experience-card">
-            <h3>Web Developer</h3>
-            <p>Maadya Digital (2010 - 2015)</p>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Education Section -->
-    <section id="education">
+<!-- Education Section -->
+<section id="education">
+    <div class="container">
         <h2>Education</h2>
-        <p><strong>Postgraduate Diploma</strong> - Cegep de la Gaspésie et des Iles, Quebec, Canada (2024)</p>
-        <p><strong>BSc in Computer Science</strong> - University of Peradeniya, Sri Lanka (2010)</p>
-    </section>
+        <div class="education-container">
+            <div class="education-card">
+                <i class="fas fa-graduation-cap education-icon"></i>
+                <h3>Postgraduate Diploma</h3>
+                <p class="institution">Cegep de la Gaspésie et des Iles, Quebec, Canada</p>
+                <span class="duration">2024</span>
+                <p>Advanced training in mobile application development including Android, iOS, and hybrid technologies.</p>
+            </div>
+            <div class="education-card">
+                <i class="fas fa-university education-icon"></i>
+                <h3>BSc in Computer Science</h3>
+                <p class="institution">University of Peradeniya, Sri Lanka</p>
+                <span class="duration">2010</span>
+                <p>Specialized in software engineering, data structures, and system architecture.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:jpdilipk@gmail.com">jpdilipk@gmail.com</a></p>
-        <div class="social-links">
-            <a href="https://codezoon.com/" class="btn">Website</a>
-            <a href="https://www.youtube.com/channel/UCiS5eg5cE628AtLytcZ4WDg" class="btn">YouTube</a>
-            <a href="https://www.linkedin.com/in/dilip-kumara-3b8819104" class="btn">LinkedIn</a>
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:jpdilipk@gmail.com">jpdilipk@gmail.com</a></p>
+            <div class="social-links">
+                <a href="https://codezoon.com/" class="btn">Website</a>
+                <a href="https://www.linkedin.com/in/dilip-kumara-3b8819104" class="btn">LinkedIn</a>
+            </div>
         </div>
     </section>
 
